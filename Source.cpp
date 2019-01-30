@@ -1,13 +1,17 @@
 
 
 
-/***********************************************
+/************************************************
 * Name: Carmen DiGironimo
 * Email: digiro77@students.rowan.edu
-***********************************************
+*************************************************
 * Purpose:
-*  This program converts an inputted mile value to a kilometers, computes the circumference of a circle
-***********************************************/
+*  This program converts an inputted mile value 
+*  to metric values, computes the circumference
+*  of a circle, converts celsius to farenheit, 
+*  calculates equivalent age values, and displays
+*  my first initial.
+*************************************************/
 
 #include <iostream>
 
@@ -25,10 +29,11 @@ int main()
 	float farenheit, celsius, ageYears, ageMonths, ageDays, ageHours, ageMinutes, ageSeconds;
 
 	//Display purpose of the program
-	cout << " ******************************************" << endl;
-	cout << " This program takes converts mile values to metric values and uses radius to compute circumference of a circle" << endl;
-	cout << " This program will also convert farenheit temperatures to celsius, computes equivalent age values based on years, and displays my initials" << endl;
-	cout << " ******************************************\n\n";
+	cout << " ******************************************************************************************************************* " << endl;
+	cout << " This program converts mile values to metric values and uses radius to compute circumference of a circle" << endl;
+	cout << " This program will also convert celsius temperatures to farenheit and computes equivalent age values based on years." << endl;
+	cout << " Finally, it will display my first initial" << endl;
+	cout << " ******************************************************************************************************************* \n\n";
 
 	//Get user input for miles
 	cout << "Convert miles to metric measurements: \n";
@@ -67,10 +72,34 @@ int main()
 	farenheit = ((9 * celsius) / 5) + 32;
 
 	//Display converted values
-	cout << "\n" << farenheit << " degrees farenheit is " << celsius << " degrees celsius.\n\n";
+	cout << "\n" << celsius << " degrees celsius is " << farenheit << " degrees farenheit.\n\n";
 
-	
-	
+	//Get user input age in years
+	cout << "Enter an age in years: ";
+	cin >> ageYears;
+
+	//Calculate user age in months, days, hours, minutes, and seconds
+	ageMonths = ageYears * 12;
+	ageDays = ageYears * 365.25;
+	ageHours = ageYears * 365.25 * 24;
+	ageMinutes = ageYears * 365.25 * 24 * 60;
+	ageSeconds = ageYears * 365.25 * 24 * 60 * 60;
+
+	//Display converted values of age
+	cout << ageYears << " years old is equivalent to: \n\n";
+	cout << ageMonths << " months.\n";
+	cout << ageDays << " days.\n";
+	cout << ageHours << " hours.\n";
+	cout << ageMinutes << " minutes.\n";
+	cout << ageSeconds << " seconds.\n\n";
+
+	//Printing my initials (C and D)
+	cout << "My first initial, C, is displayed below: \n";
+	cout << "*****";
+	cout << "*\n";
+	cout << "*\n";
+	cout << "*****\n";
+
 	//End of program
 	cout << "Program has ended"<<endl;
 
