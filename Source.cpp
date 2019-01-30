@@ -30,7 +30,7 @@ int main()
 
 	//Display purpose of the program
 	cout << " ******************************************************************************************************************* " << endl;
-	cout << " This program converts mile values to metric values and uses radius to compute circumference of a circle" << endl;
+	cout << " This program converts mile values to metric values and uses radius to compute the circumference of a circle" << endl;
 	cout << " This program will also convert celsius temperatures to farenheit and computes equivalent age values based on years." << endl;
 	cout << " Finally, it will display my first initial" << endl;
 	cout << " ******************************************************************************************************************* \n\n";
@@ -95,7 +95,7 @@ int main()
 
 	//Printing my initials (C and D)
 	cout << "My first initial, C, is displayed below: \n";
-	cout << "*****";
+	cout << "*****\n";
 	cout << "*\n";
 	cout << "*\n";
 	cout << "*****\n";
