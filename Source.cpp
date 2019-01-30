@@ -95,10 +95,12 @@ int main()
 
 	//Printing my initials (C and D)
 	cout << "My first initial, C, is displayed below: \n";
-	cout << "*****\n";
+	cout << "******\n";
 	cout << "*\n";
 	cout << "*\n";
-	cout << "*****\n";
+	cout << "*\n";
+	cout << "*\n";
+	cout << "******\n";
 
 	//End of program
 	cout << "Program has ended"<<endl;
